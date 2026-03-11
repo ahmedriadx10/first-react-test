@@ -1,0 +1,9 @@
+.info{
+  max-width: 500px;
+  margin: 0 auto;
+  border:  2px  solid skyblue ;
+  padding: 10px 25px 30px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+}
