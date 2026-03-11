@@ -1,44 +1,45 @@
+import Product from "./components/Product";
+
 function App() {
-  const users = [
+  const prodcuts = [
     {
       id: 1,
-      name: "Riad",
-      age: 19,
+      title:'T-shirt',
+      price: 500,
     },
     {
       id: 2,
-      name: "Ridu",
-      age: 19,
+      title:'shirt',
+      price: 700,
     },
     {
       id: 3,
-      name: "Riad Ahmed",
-      age: 19,
+      title:'Pant',
+      price: 900,
     },
     {
       id: 4,
-      name: "Riad Ali",
-      age: 19,
+      title:'Shoes',
+      price: 1200,
     },
+    
   ];
   return (
     <div>
       <h1>This is my Favourite Foods</h1>
 
-      <div>
-        {users.map((user) => {
-          const { id, name, age } = user;
 
-          return (
-            <div key={id}>
-              <p>Name: {name} </p>
-              <p> {age} </p>
-              <p>Age status: {age>=18?'Adult':'not-adult'} </p>
-            </div>
-          );
-        })}
-      </div>
-    </div>
+<div>
+
+{
+
+prodcuts.map((cart)=><Product key={cart.id} cart={cart} />)
+}
+
+
+</div>
+
+   </div>
   );
 }
 
